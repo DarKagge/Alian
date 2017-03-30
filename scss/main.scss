@@ -33,42 +33,190 @@ body textarea:required:valid{
 
 //Custom Styles Here
 
-footer{
-    background-color: #000000;
+.causes{
+    background-image: url("../img/bg-causes.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 1554px;
+    background-color: transparent;
+    background-size: cover;
+    position: relative;
+    z-index: 6;
+}
+
+.cars-title{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../img/car-bg.png");
+    background-repeat: no-repeat;
+    background-position: center top;
     width: 100%;
-    overflow: hidden;
-    padding-top: 11px;
-    padding-bottom: 2px;
-    ul{
-        margin-top: 19px;
-        float: left;
-        padding-left: 0;
-        padding-right: 0;
-        li{
-            float: left;
-            margin-right: 20px;
-            a{
-                text-decoration: none;
-                color: #616161;
-                font-size: 16px;
-            }
-            a:hover{
-                text-decoration: none;
-                color: #fff;
-            }
+    height: 650px;
+}
+.title-causes{
+    margin-left: 100px;
+    padding-bottom: 60px;
+    h3{
+        margin-top: -100px;
+        line-height: 180px;
+        font-size: 180.33px;
+        color: #fff;
+        opacity: 0.1;
+    }
+    h2{
+        margin-top: 112px;
+        color: #fff;
+        font-size: 60px;
+        line-height: 65px;
+        position: relative;
+        &:after{
+            position: absolute;
+            content: '';
+            left: -177px;
+            top: 95px;
+            width: 147px;
+            height: 4px;
+            background-color: #f2a002;
         }
-    }
-    .gs{
-        float: right;
-        margin: 9px;
-        margin-right: 15px;
-        display: block;
-    }
-    .gs:visited, .gs:active{
-        text-decoration:none;
     }
 }
 
+
+.item-causes{
+    .item-c_right{
+        text-align: right;
+    }
+    .item-c{
+        margin-bottom: 70px;
+        .text-items-c{
+            display: inline-block;
+            padding-left: 55px;
+            vertical-align: top;
+            text-align: left;
+            h2{
+                color: #fff;
+                font-size:36px;
+                line-height: 40px;
+                padding-top: 29px;
+            }
+            p{
+                font-size: 18px;
+                color: #fff;
+                line-height: 25px;
+                opacity: .3;
+                padding-top: 20px;
+            }
+        }
+        .item-img-c{
+            vertical-align: top;
+            display: inline-block;
+        }
+        .text-items-c_right{
+            text-align: right;
+            padding-right: 55px;
+            padding-left: 0;
+        }
+    }
+}
+
+.forma-first{
+    background-color: #000000;
+    position: relative;
+    margin-top: -325px;
+    height: 415px;
+    form{
+        top: 275px;
+        position: absolute;
+        &:after{
+            position: absolute;
+            content: '';
+            left: 100px;
+            top: -170px;
+            width: 4px;
+            height: 147px;
+            z-index: 7;
+            background-color: #339afc;
+        }
+    }
+}
+.all-form-two{
+    background-color: rgba(255,255,255,0.3);
+    border: 2px solid #339afc;
+    padding: 38px 29px;
+    position: relative;
+    h2{
+        font-size: 30px;
+        margin-right: 20px;
+        color: #fff;
+    }
+    input{
+        background-color: #bbbbbb;
+        border: none;
+        color: #717171;
+        @include placeholder{
+            color: #717171;
+        }
+    }
+}
+
+
+
+.service{
+    background-color: #000000;
+}
+
+.title-service{
+    position: relative;
+    h3{
+        font-size: 419.18px;
+        line-height: 510px;
+        color: #fff;
+        opacity: .2;
+    }
+    h2{
+        position: absolute;
+        left: 100px;
+        top: 155px;
+        color: #fff;
+        font-size:60px;
+    }
+}
+
+
+.service-items{
+    .item-serv{
+        max-width: 300px;
+        display: inline-block;
+        margin: 0 50px;
+        &:first-child{
+            margin-left: 0;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+        h2{
+            color: #fff;
+            font-size:24px;
+            line-height: 24px;
+            padding-top: 24px;
+            font-family:RobotoCondensed-Bold;
+        }
+        .prev-img{
+            background-color: rgba(255,255,255, 0.3);
+            max-width: 380px;
+            width: 100%;
+            height: 280px;
+            margin-left: 50px;
+            transform: skewX(-15deg);
+            img{
+                transform: skewX(14deg);
+                margin-left: -49px;
+                position: relative;
+            }
+        }
+    }
+}
 
 //ALWAYS END
 @import "media.scss";
