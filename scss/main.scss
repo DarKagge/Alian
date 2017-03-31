@@ -36,10 +36,9 @@ body textarea:required:valid{
 .causes{
     background-image: url("../img/bg-causes.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
     min-height: 1554px;
     background-color: transparent;
-    background-size: cover;
     position: relative;
     z-index: 6;
 }
@@ -120,11 +119,14 @@ body textarea:required:valid{
     }
 }
 
-.forma-first{
-    background-color: #000000;
+.forma{
     position: relative;
+    margin-top: -138px;
+}
+.forma-first{
     margin-top: -325px;
     height: 415px;
+    background-color: #000000;
     form{
         top: 275px;
         position: absolute;
@@ -164,6 +166,10 @@ body textarea:required:valid{
 
 .service{
     background-color: #000000;
+    background-image: url("../img/bg-service.jpg");
+    background-position: center ;
+    background-repeat: no-repeat;
+    min-height: 1959px;
 }
 
 .title-service{
@@ -189,7 +195,7 @@ body textarea:required:valid{
     .item-serv{
         max-width: 300px;
         display: inline-block;
-        margin: 60px 50px;
+        margin: 49px 50px;
         &:first-child{
             margin-left: 0;
         }
@@ -199,15 +205,34 @@ body textarea:required:valid{
         &:nth-child(3n){
             margin-right: 0;
         }
-        &:nth-child(4n){
+        &:nth-child(4){
             margin-left: 0;
         }
+        &:nth-child(7){
+            margin-left: 0;
+        }
+
+
+
         h2{
             color: #fff;
             font-size:24px;
             line-height: 24px;
             padding-top: 24px;
             font-family:RobotoCondensed-Bold;
+        }
+        a{
+            margin-top: 24px;
+            border: 2px solid #666666;
+            display: block;
+            font-size: 24px;
+            color: #666666;
+            text-align: center;
+            &:hover{
+                border: 2px solid #339afc;
+                color: #339afc;
+                text-decoration: none;
+            }
         }
         .prev-img{
             background-color: rgba(255,255,255, 0.3);
@@ -216,6 +241,18 @@ body textarea:required:valid{
             height: 280px;
             margin-left: 50px;
             transform: skewX(-15deg);
+            &:hover{
+                background-color: #339afc;
+                &:after{
+                    position: absolute;
+                    content: '';
+                    width: 305px;
+                    top: 0px;
+                    left: -18px;
+                    height: 270px;
+                    background-color: rgba(0,0,0,.3);
+                }
+            }
             img{
                 transform: skewX(14deg);
                 margin-left: -49px;
@@ -225,6 +262,120 @@ body textarea:required:valid{
     }
 }
 
+
+
+.company{
+    background-image: url("../img/bg-gcat.png");
+    padding-top: 242px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-height: 862px;
+    background-color: #000;
+    position: relative;
+    z-index: 69;
+    h2{
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    p{
+        color: #fff;
+        font-size:18px;
+        line-height: 35px;
+        padding-top: 40px;
+    }
+    .left-block-comp{
+        h2{
+            color: #f2a002;
+        }
+    }
+    .right-block-comp{
+        padding-left: 85px;
+        h2{
+            color: #2a98ff;
+        }
+        ul{
+            margin: 45px 0 0 30px;
+            li{
+                float: left;
+                &:last-child{
+                    a{
+                        .block-white-log{
+                            img{
+                                padding-top: 15px;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(5){
+                    a{
+                        margin-left: 0;
+                        .block-white-log{
+                            img{
+                                padding-top: 23px;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(6){
+                    a{
+
+                        .block-white-log{
+                            img{
+                                padding-top: 20px;
+                            }
+                        }
+                    }
+                }
+                a{
+                    display: block;
+                    margin: 15px 1px;
+                    .block-white-log{
+                        display: block;
+                        width: 89px;
+                        height: 65px;
+                        background-color: #fff;
+                        transform: skewX(-15deg);
+                        margin-left: 10px;
+                        text-align: center;
+                        img{
+                            padding-top: 10px;
+                            transform: skewX(15deg);
+                            line-height: 25px;
+                        }
+                    }
+                    p{
+                        padding-top: 5px;
+                        font-size: 12px;
+                        line-height: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.title-bottom{
+    margin-top: -180px;
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+
+    h2{
+        font-size:229px;
+        color: #fff;
+        opacity: .2;
+    }
+    .blue-line{
+        width: 147px;
+        height: 4px;
+        display: inline-block;
+        margin-left: -73.5px;
+        position: absolute;
+        top: 60px;
+        z-index: 80;
+        background-color: #369cff;
+    }
+}
 //ALWAYS END
 @import "media.scss";
 @import "sketches.scss";

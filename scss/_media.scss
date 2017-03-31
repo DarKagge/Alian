@@ -2,8 +2,10 @@
 @import "vars.scss";
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-
+@media only screen and (max-width : 1300px) {
+	.company .title-bottom h2{
+		font-size:240px;
+	}
 }
 
 /* Medium Devices, Desktops */
