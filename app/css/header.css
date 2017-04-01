@@ -17,6 +17,12 @@ a, button, input, textarea {
     outline: 0;
     border: 0; }
 
+a:focus {
+  text-decoration: none; }
+
+a:active {
+  text-decoration: none; }
+
 button:hover {
   cursor: pointer; }
 
@@ -112,6 +118,9 @@ header {
       color: #fff;
       font-size: 20px;
       padding: 16px 37px; }
+      .head-menu ul li a:hover {
+        color: #339afc;
+        text-decoration: none; }
 
 .info-head {
   padding-top: 63px; }
