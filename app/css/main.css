@@ -549,6 +549,43 @@ footer {
       opacity: 0.5;
       color: #fff; }
 
+body .call-back {
+  margin: 0 auto;
+  max-width: 370px;
+  text-align: center;
+  position: relative; }
+  body .call-back .mfp-close {
+    color: #fff;
+    opacity: 1;
+    border: 1px solid #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 19px;
+    -webkit-border-radius: 120px;
+    border-radius: 120px;
+    width: 20px;
+    padding: 0;
+    height: 20px;
+    right: 12px;
+    top: 12px; }
+  body .call-back .forma {
+    margin-top: 0; }
+    body .call-back .forma .all-form-two {
+      background-color: rgba(0, 0, 0, 0.4); }
+      body .call-back .forma .all-form-two h2 {
+        padding-bottom: 35px;
+        margin-right: 0; }
+      body .call-back .forma .all-form-two input {
+        margin: 11px auto; }
+      body .call-back .forma .all-form-two button {
+        margin: 11px auto;
+        text-align: center;
+        padding-left: 0; }
+        body .call-back .forma .all-form-two button:after {
+          display: none; }
+    body .call-back .forma .all-form * {
+      display: block; }
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1300px) {
   .company .title-bottom h2 {

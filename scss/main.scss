@@ -683,6 +683,54 @@ footer{
         }
     }
 }
+
+
+body .call-back{
+    margin: 0 auto;
+    max-width:370px;
+    text-align: center;
+    position: relative;
+    .mfp-close{
+        color: #fff;
+        opacity: 1;
+        border: 1px solid #fff;
+        font-size: 14px;
+        text-align: center;
+        line-height: 19px;
+        border-radius: 120px;
+        width: 20px;
+        padding: 0;
+        height: 20px;
+        right: 12px;
+        top: 12px;
+    }
+    .forma{
+        margin-top: 0;
+        .all-form-two{
+            background-color: rgba(0,0,0,0.4);
+            h2{
+                padding-bottom: 35px;
+                margin-right: 0;
+            }
+            input{
+                margin: 11px auto;
+            }
+            button{
+                margin: 11px auto;
+                text-align: center;
+                padding-left: 0;
+                &:after{
+                    display: none;
+                }
+            }
+        }
+        .all-form{
+            *{
+                display: block;
+            }
+        }
+    }
+}
 //ALWAYS END
 @import "media.scss";
 @import "sketches.scss";
