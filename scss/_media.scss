@@ -111,37 +111,20 @@
 
 
 @media only screen and (max-width : 1183px){
-  .working .portfolio .gallery {
-    li {
-      &:first-child{
-        a{
-          margin: 14px 10.5px;
-        }
-      }
-      &:last-child{
-        a{
-          margin: 14px 10.5px;
-        }
-      }
-      &:nth-child(3n){
-        a{
-          margin: 14px 10.5px;
-        }
-      }
-      &:nth-child(4n){
-        a{
-          margin: 14px 10.5px;
-        }
-      }
-      &:nth-child(5){
-        a{
-          margin: 14px 10.5px;
-        }
-      }
+  .working .portfolio .gallery li{
+    &:nth-child(4n){
+       a{
+         margin: 14px 10.5px;
+       }
+     }
+    &:nth-child(4n+1){
       a{
         margin: 14px 10.5px;
       }
     }
+      a{
+        margin: 14px 10.5px;
+      }
   }
 }
 

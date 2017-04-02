@@ -200,21 +200,14 @@ body textarea:required:valid{
         max-width: 300px;
         display: inline-block;
         margin: 49px 50px;
-        &:first-child{
+        &:nth-child(3n+1){
             margin-left: 0;
         }
-        &:last-child{
-            margin-right: 0;
-        }
+
         &:nth-child(3n){
             margin-right: 0;
         }
-        &:nth-child(4){
-            margin-left: 0;
-        }
-        &:nth-child(7){
-            margin-left: 0;
-        }
+
 
 
 
@@ -258,9 +251,13 @@ body textarea:required:valid{
             width: 100%;
             height: 280px;
             margin-left: 50px;
+            position: relative;
             transform: skewX(-15deg);
             &:hover{
                 background-color: #339afc;
+                .hide-menu{
+                    display: block;
+                }
                 &:after{
                     position: absolute;
                     content: '';
@@ -275,6 +272,28 @@ body textarea:required:valid{
                 transform: skewX(14deg);
                 margin-left: -49px;
                 position: relative;
+            }
+            .hide-menu{
+                display: none;
+                position: absolute;
+                left: 35px;
+                top:70px;
+                width: 100%;
+                z-index: 30;
+                text-align: center;
+                transform: skewX(15deg);
+                a{
+                    font-size: 18px;
+                    color: #339afc;
+                    padding: 0;
+                    margin: 0;
+                    text-align: left;
+                    text-decoration: underline;
+                    border: none;
+                    &:after{
+                        display: none;
+                    }
+                }
             }
         }
     }
@@ -423,28 +442,12 @@ body textarea:required:valid{
             text-align: center;
             li{
                 display: inline-block;
-                &:first-child{
-                    a{
-                        margin-left: 0;
-                    }
-                }
-                &:last-child{
-                    a{
-                        margin-right: 0;
-                    }
-                }
-
                 &:nth-child(4n){
                     a{
                         margin-right: 0;
                     }
                 }
-                &:nth-child(5){
-                    a{
-                        margin-left: 0;
-                    }
-                }
-                &:nth-child(9){
+                &:nth-child(4n+1){
                     a{
                         margin-left: 0;
                     }
