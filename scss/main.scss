@@ -129,7 +129,6 @@ body textarea:required:valid{
     background-color: #000000;
     form{
         top: 275px;
-        position: absolute;
         &:after{
             position: absolute;
             content: '';
@@ -162,7 +161,9 @@ body textarea:required:valid{
     }
 }
 
-
+.mobile-items-c{
+  display: none;
+}
 
 .service{
     background-color: #000000;
@@ -170,10 +171,12 @@ body textarea:required:valid{
     background-position: center ;
     background-repeat: no-repeat;
     min-height: 1959px;
+    overflow: hidden;
 }
 
 .title-all{
     position: relative;
+    overflow: hidden;
     h3{
         font-size: 419.18px;
         line-height: 510px;
@@ -654,6 +657,8 @@ body textarea:required:valid{
 footer{
     background-image: url("../img/foot-bg.jpg");
     background-position: center -50px;
+    background-repeat: no-repeat;
+
     min-height: 116px;
     .logo{
         padding-top: 35px;

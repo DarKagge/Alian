@@ -8,49 +8,468 @@
 	}
 }
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-	.wrapper{
-		width: auto;
-	}
-	.pad{
-		padding: 50px 5px !important;
-	}
-	footer{
-		text-align: center;
-		.wrapper{
-			width: auto;
-		}
-		ul{
-			float: none;
-			display: inline-block;
-			text-align: center;
-			li{
-				margin-bottom: 10px;
-				margin-right: 0;
-				float: none;
-			}
-		}
-		.gs{
-			float: none;
-			display: block;
-		}
-	}
+
+
+
+@media only screen and (max-width : 1220px){
+  .service-items {
+    .item-serv{
+      margin: 49px 45px;
+    }
+
+  }
+
 }
 
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 1190px){
+  .service-items {
+    text-align: center;
+    .item-serv{
+      margin: 49px 70px;
+      &:nth-child(3n){
+        margin: 49px 70px;
+      }
+      &:nth-child(4){
+        margin: 49px 70px;
+      }
+      &:nth-child(7){
+        margin: 49px 70px;
+      }
+      &:first-child{
+        margin: 49px 70px;
+      }
+      &:last-child{
+        margin: 49px 70px;
+      }
+    }
+  }
+  .forma{
+    margin-top: 0;
+    background-color: #000;
+  }
+  .forma-first{
+    margin-top: -325px;
+    height: 415px;
+    background-color: #000000;
+  }
+  .service{
+    background-position: right;
+    background-size: cover;
+  }
 
+
+}
+
+@media only screen and (max-width : 1199px){
+  .services{
+    ul{
+      text-align: center;
+      li{
+        display: inline-block;
+        float: none;
+        text-align: left;
+        vertical-align: top;
+        margin: 10px 15px;
+        &:first-child{
+           margin: 10px 15px;
+         }
+        &:last-child{
+          margin: 10px 15px;
+        }
+      }
+    }
+
+  }
+}
+@media only screen and (max-width : 1194px){
+  .head-menu ul {
+    text-align: center;
+    li{
+      float: none;
+      display: inline-block;
+      &:first-child{
+        a{
+          padding: 16px 30px;
+        }
+      }
+      &:last-child{
+        a{
+          padding: 16px 30px;
+        }
+      }
+      a{
+        padding: 16px 30px;
+      }
+
+    }
+  }
+  .working .title-all h3{
+    font-size:21.5vw;
+  }
+}
+
+
+
+@media only screen and (max-width : 1183px){
+  .working .portfolio .gallery {
+    li {
+      &:first-child{
+        a{
+          margin: 14px 10.5px;
+        }
+      }
+      &:last-child{
+        a{
+          margin: 14px 10.5px;
+        }
+      }
+      &:nth-child(3n){
+        a{
+          margin: 14px 10.5px;
+        }
+      }
+      &:nth-child(4n){
+        a{
+          margin: 14px 10.5px;
+        }
+      }
+      &:nth-child(5){
+        a{
+          margin: 14px 10.5px;
+        }
+      }
+      a{
+        margin: 14px 10.5px;
+      }
+    }
+  }
+}
+
+
+
+
+
+@media only screen and (max-width : 1170px){
+  .title-all h3{
+    font-size:35vw;
+  }
+}
+
+
+@media only screen and (max-width : 1168px){
+  .all-form{
+    input{
+      margin-right: 10px;
+    }
+  }
+}
+@media only screen and (max-width : 1158px){
+  .forma-first form{
+    position: relative;
+  }
+  .forma{
+    *{
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+    }
+    input{
+      text-align: left;
+      margin: 10px auto;
+    }
+  }
+}
+
+@media only screen and (max-width : 1132px){
+  .company{
+    br{
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width : 1124px){
+  .title-bottom h2{
+    font-size:19vw;
+  }
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1109px) {
+  .social ul li a{
+    margin: 0 4px;
+  }
+}
+
+
+@media only screen and (max-width : 1029px) {
+  .social ul li a{
+    margin: 0 2px;
+  }
+}
+
+@media only screen and (max-width : 1003px) {
+  .contacts .call-back a{
+    padding-right: 10px;
+  }
+}
+
+
+
+
+@media only screen and (max-width : 991px) {
+  .logo{
+    text-align: center;
+  }
+  .social{
+    text-align: center;
+    p{
+      display: block;
+    }
+    ul{
+      li{
+        a{
+          margin: 4px 5px;
+        }
+      }
+    }
+  }
+  .contacts{
+    text-align: center;
+  }
+  .head-menu{
+    display: none;
+  }
+  .head-menu-c{
+    text-align: center;
+  }
+  .footer-menu{
+    text-align: center;
+  }
+  .toggle_mnu{
+    display: inline-block !important;
+  }
+  .info-head{
+    text-align: center;
+  }
+  .company{
+    background-size: cover;
+    padding-top: 80px;
+    .right-block-comp{
+      padding-top: 15px;
+      padding-left: 0;
+      ul{
+        text-align: center;
+        li{
+          float: none;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  footer{
+    background-size: cover;
+    background-position: center;
+  }
+
+}
+
+
+@media only screen and (max-width : 933px){
+  .forma-cars {
+    form {
+      ul {
+        text-align: center;
+        li{
+          display: inline-block;
+          float: none;
+          a{
+            margin: 30px 14.8px 15px 14.8px;
+          }
+          &:first-child{
+            a{
+              margin: 30px 14.8px 15px 14.8px;
+            }
+          }
+          &:last-child{
+            a{
+              margin: 30px 14.8px 15px 14.8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 929px){
+
+  .forma-cars {
+    background-size: cover;
+    form {
+      text-align: center;
+      .model{
+        margin: 30px 30px;
+      }
+      input{
+        float: none;
+        display: inline-block;
+        width: 100%;
+        margin: 30px 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 864px){
+  .causes{
+    background-size: cover;
+  }
+  .item-c{
+    display: none;
+  }
+  .mobile-items-c{
+    display: block;
+    .item-c{
+      display: block;
+      text-align: center;
+      .item-img-c{
+        display: block;
+      }
+      .text-items-c{
+        text-align: center;
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width : 786px){
+  .company{
+    padding-bottom: 170px;
+  }
+}
+
+@media only screen and (max-width : 700px){
+  .title-causes h3{
+    font-size:25vw;
+  }
+}
+
+@media only screen and (max-width : 653px){
+  .all-form-two h2{
+    margin-right: 0;
+  }
+  .all-form{
+    h3{
+      margin-right: 0;
+    }
+    input{
+      margin: 10px auto;
+      display: block;
+    }
+  }
+}
+
+
+@media only screen and (max-width : 604px){
+  .forma-first form:after{
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 600px){
+  .forma-cars form{
+    .model{
+      margin: 30px auto;
+    }
+    input{
+      margin: 30px auto;
+    }
+  }
+}
+
+@media only screen and (max-width : 510px){
+  .service-items {
+    text-align: center;
+    .item-serv{
+      margin: 40px 0px;
+      &:nth-child(3n){
+        margin: 40px 0px;
+      }
+      &:nth-child(4){
+        margin: 40px 0px;
+      }
+      &:nth-child(7){
+        margin: 40px 0px;
+      }
+      &:first-child{
+        margin: 40px 0px;
+      }
+      &:last-child{
+        margin: 40px 0px;
+      }
+      .prev-img{
+        max-width: 240px;
+        &:hover{
+          &:after{
+            width: 240px;
+            left: -27px;
+          }
+        }
+        img{
+          max-width: 270px;
+          height: 270px;
+          margin-left: -32px;
+          transform: skewX(10deg);
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width : 485px){
+  .forma-cars form button{
+    font-size: 19px;
+  }
+  .title-causes{
+    margin-left: 0px;
+    text-align: center;
+  }
+  .title-causes h2:after{
+    left: -105px;
+  }
+}
+
+@media only screen and (max-width : 450px){
+  .forma-cars form{
+    padding: 20px 10px;
+  }
+}
+
+@media only screen and (max-width : 368px){
+  .all-form input{
+    width: 100%;
+  }
+  .all-form button{
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+    &:after{
+      display: none;
+    }
+  }
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-	.pad{
-		padding: 20px 5px !important;
-	}
-	// 100% ширина окна
-	// .fancybox-wrap{
-	// 	width: 100% !important;
-	// 	left: 0 !important;
-	// }
+@media only screen and (max-width : 350px) {
+  .info-head h1{
+    font-size: 15vw;
+  }
+  .all-form-two h2{
+    font-size: 7vw;
+  }
+
 }
