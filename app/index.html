@@ -146,10 +146,13 @@
                                 любых марок</h1>
                             <p>Бесплатная замена масла до 28 февраля 2017</p>
                             <form class="all-form">
+                                <input type="hidden" name="project_name" value="Alian">
+                                <input type="hidden" name="admin_email" value="ElectroDeggi33759@yandex.ru">
+                                <input type="hidden" name="form_subject" value="Регистрация">
                                 <input type="text" placeholder="Ваш телефон" style="background-image: url(img/phone-in.png)">
                                 <button type="submit" name="send">Записаться бесплатно</button>
                             </form>
-                            <div class="services">
+                            <div class="services clearfix">
                                 <ul>
                                     <li style="background-image: url(img/ser1.jpg)">
                                         <h2>Химчистка</h2>
@@ -277,7 +280,10 @@
         <div class="inner">
             <form class="all-form all-form-two">
                 <h2>Запишитесь в автосервис бесплатно</h2>
-                <input type="text" placeholder="Ваш телефон" style="background-image: url(img/phone-two.png)">
+                <input type="hidden" name="project_name" value="Alian">
+                <input type="hidden" name="admin_email" value="ElectroDeggi33759@yandex.ru">
+                <input type="hidden" name="form_subject" value="Регистрация">
+                <input type="text" placeholder="Ваш телефон" style="background-image: url(img/phone-two.png)" required>
                 <button type="submit" name="send">Записаться бесплатно</button>
             </form>
         </div>
@@ -410,6 +416,9 @@
         <div class="inner">
             <form class="all-form all-form-two">
                 <h2>Запишитесь в автосервис бесплатно</h2>
+                <input type="hidden" name="project_name" value="Alian">
+                <input type="hidden" name="admin_email" value="ElectroDeggi33759@yandex.ru">
+                <input type="hidden" name="form_subject" value="Регистрация">
                 <input type="text" placeholder="Ваш телефон" style="background-image: url(img/phone-two.png)">
                 <button type="submit" name="send">Записаться бесплатно</button>
             </form>
@@ -546,6 +555,9 @@
                         </div>
                         <form class="clearfix" enctype="multipart/form-data">
                             <h2>Заполните форму</h2>
+                            <input type="hidden" name="project_name" value="Alian">
+                            <input type="hidden" name="admin_email" value="ElectroDeggi33759@yandex.ru">
+                            <input type="hidden" name="form_subject" value="Регистрация">
                             <input class="model" style="background-image: url(img/car-form.png)" type="text" placeholder="Марка и модель вашего авто" required>
                             <input style="background-image: url(img/phone-form.png)" type="text" placeholder="Ваш телефон" required>
                             <textarea style="background-image: url(img/text-form.png)" name="" id="" placeholder="Опишите свою проблему"></textarea>
@@ -660,7 +672,7 @@
                         <div class="contacts">
                             <p>Запись с 8:00 до 23:00 без выходных</p>
                             <div class="call-back">
-                                <a href="#">Обратный звонок</a>
+                                <a href="#test-popup" class="open-popup-link">Обратный звонок</a>
                                 <h3>+7 (4852) 91-61-03</h3>
                             </div>
                         </div>
@@ -672,10 +684,13 @@
 
 
 
-    <div class="call-back mfp-hide" id="test-popup">
+    <div class="popup mfp-hide" id="test-popup">
         <div class="forma">
                 <form class="all-form all-form-two">
                     <h2>Обратный звонок</h2>
+                    <input type="hidden" name="project_name" value="Alian">
+                    <input type="hidden" name="admin_email" value="ElectroDeggi33759@yandex.ru">
+                    <input type="hidden" name="form_subject" value="Регистрация">
                     <input type="text" placeholder="Ваше имя" style="background-image: url(img/name-form.png)" required>
                     <input type="text" placeholder="Ваш телефон" style="background-image: url(img/phone-two.png)" required>
                     <button type="submit" name="send">Перезвоните мне</button>
@@ -683,13 +698,15 @@
         </div>
     </div>
 
-	<div class="hidden">
-		<div id="modal_callback_ok">
-			<h3>Спасибо!</h3>
-			<h3>Ваше сообщение успешно отправлено.</h3>
-		</div>
-		<a id="call_ok" class="modal" href="#modal_callback_ok"></a>
-	</div>
+    <a href="#thankyou" class="open-popup-link"></a>
+    <div class="popup  mfp-hide" id="thankyou">
+        <div class="forma">
+            <form class="all-form all-form-two">
+                <h2>Ваша заявка получена</h2>
+                <p>Мы скоро свяжемся с вами</p>
+            </form>
+        </div>
+    </div>
 
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>

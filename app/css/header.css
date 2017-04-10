@@ -1,4 +1,5 @@
 @import url(../libs/magnific-popup/dist/magnific-popup.css);
+@import url(../libs/lightslider/dist/css/lightslider.min.css);
 body {
   font-size: 16px;
   min-width: 320px;
@@ -37,9 +38,8 @@ button:hover {
 
 header {
   background-image: url("../img/bg-head.jpg");
-  background-position: center;
+  background-position: center top;
   background-size: cover;
-  padding-bottom: 137px;
   position: relative;
   z-index: 69; }
 
@@ -107,7 +107,7 @@ header {
       line-height: 24px; }
 
 .head-menu-c {
-  background-color: #37250d; }
+  background-color: rgba(55, 37, 13, 0.7); }
 
 .head-menu ul li {
   float: left; }
@@ -115,6 +115,9 @@ header {
     padding-left: 0; }
   .head-menu ul li:last-child a {
     padding-right: 0; }
+  .head-menu ul li .active {
+    color: #339afc;
+    text-decoration: none; }
   .head-menu ul li a {
     display: block;
     color: #fff;
@@ -188,7 +191,8 @@ header {
     height: 15px; }
 
 .services {
-  margin-top: 74px; }
+  margin-top: 74px;
+  padding-bottom: 137px; }
   .services li {
     padding-left: 18px;
     float: left;

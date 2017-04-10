@@ -1,6 +1,7 @@
 @import "bourbon";
 @import "vars.scss";
 @import "../libs/magnific-popup/dist/magnific-popup.css";
+@import "../libs/lightslider/dist/css/lightslider.min.css";
 
 body{
 	font-size: 16px;
@@ -48,9 +49,8 @@ button{
 
 header{
 	background-image: url("../img/bg-head.jpg");
-	background-position: center;
+	background-position: center top;
 	background-size: cover;
-	padding-bottom: 137px;
 	position: relative;
 	z-index: 69;
 
@@ -140,7 +140,7 @@ header{
 }
 
 .head-menu-c{
-  background-color: #37250d;
+  background-color: rgba(55,37,13,0.7);
 }
 .head-menu{
 	ul{
@@ -151,6 +151,10 @@ header{
 			}
 			&:last-child{
 				a{padding-right: 0;}
+			}
+			.active{
+				color: #339afc;
+				text-decoration: none;
 			}
 			a{
 				display: block;
@@ -231,6 +235,7 @@ header{
 }
 .services{
 	margin-top: 74px;
+	padding-bottom: 137px;
 	li{
 		padding-left: 18px;
 		float: left;

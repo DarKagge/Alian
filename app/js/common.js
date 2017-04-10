@@ -135,3 +135,31 @@ $(".toggle_mnu").click(function() {
 		type:'inline',
 		midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
 	});
+
+
+
+
+
+
+
+
+
+
+
+	var adaptive = $('#adaptive').lightSlider({
+		item:1,
+		slideMargin:5,
+		loop: true,
+		auto:false,
+		controls:false,
+
+	});
+
+	$(".left-arrow a").on("click",function (e) {
+		e.preventDefault();
+		adaptive.goToPrevSlide();
+	});
+	$(".right-arrow a").on("click",function (e) {
+		e.preventDefault();
+		adaptive.goToNextSlide();
+	});
