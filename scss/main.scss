@@ -933,7 +933,25 @@ body .popup{
         max-width: 970px;
         margin: 0 auto;
         ul{
+            .active{
+                display: block;
+                transition: 1s all;
+                a{
+                    &:after{
+                        background-image: url("../img/p-arrow1.png");
+                        width: 24px;
+                        height: 13px;
+                        top: 31px;
+                        right: 35px;
+                    }
+                }
+                .second-price{
+                    display: block !important;
+
+                }
+            }
             li{
+                transition: 1s all;
                 .second-price{
                     display: none;
                     li{
@@ -965,6 +983,7 @@ body .popup{
                     background-color: #3a3a3a;
                     margin: 5px 0;
                     position: relative;
+                    transition: 1s all;
                     &:after{
                         position: absolute;
                         content: '';
@@ -1133,6 +1152,7 @@ body .popup{
 
 .last-blocks-b{
     min-height: 472px;
+    color: #fff;
 }
 .last-blocks-c{
     padding: 90px 0 0 50px;
@@ -1406,6 +1426,59 @@ body .popup{
 
 .blog{
     background-color: #fff;
+}
+
+
+.title-project{
+    background-image: url("../img/auto-in.jpg");
+    background-position: center;
+    min-height: 600px;
+    text-align: center;
+    padding-top: 170px;
+    color: #fff;
+    p{
+        opacity: 0.2;
+    }
+    h2{
+        font-size: 72px;
+        opacity: 0.9;
+        line-height: 72px;
+    }
+}
+
+
+
+.project-in{
+    background-color: #f3f3f3;
+    .projects-info{
+        max-width: 970px;
+        background-color: #fff;
+        margin: 0 auto;
+        margin-top: -50px;
+        border-radius: 5px;
+        padding: 70px;
+        h2{
+            font-size: 32px;
+            font-family:RobotoCondensed-Bold;
+            line-height: 32px;
+            color: #000;
+        }
+        p{
+            padding-top: 30px;
+            font-size:18px;
+        }
+    }
+    .img-project{
+        margin: 30px 0;
+        ul{
+            li{
+                float: left;
+                a{
+                    margin: 15px 15px;
+                }
+            }
+        }
+    }
 }
 //ALWAYS END
 @import "media.scss";

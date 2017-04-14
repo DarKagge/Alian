@@ -734,42 +734,59 @@ body .popup {
   .price .price-menu {
     max-width: 970px;
     margin: 0 auto; }
-    .price .price-menu ul li .second-price {
-      display: none; }
-      .price .price-menu ul li .second-price li {
-        position: relative;
-        display: block;
-        padding: 15px 0 15px 31px; }
-      .price .price-menu ul li .second-price * {
-        font-size: 32px;
-        vertical-align: top;
-        display: inline-block; }
-      .price .price-menu ul li .second-price p {
-        color: #fff; }
-      .price .price-menu ul li .second-price span {
-        color: #f2a002;
-        float: right;
-        padding-right: 27px; }
-    .price .price-menu ul li a {
+    .price .price-menu ul .active {
       display: block;
-      padding: 10.5px 31px;
-      color: #fff;
-      font-size: 32px;
-      font-family: RobotoCondensed-Bold;
-      background-color: #3a3a3a;
-      margin: 5px 0;
-      position: relative; }
-      .price .price-menu ul li a:after {
-        position: absolute;
-        content: '';
-        right: 40px;
-        top: 24px;
-        background-image: url("../img/p-arrow.png");
-        background-repeat: no-repeat;
-        width: 13px;
-        height: 24px; }
-      .price .price-menu ul li a:hover {
-        text-decoration: none; }
+      -webkit-transition: 1s all;
+      transition: 1s all; }
+      .price .price-menu ul .active a:after {
+        background-image: url("../img/p-arrow1.png");
+        width: 24px;
+        height: 13px;
+        top: 31px;
+        right: 35px; }
+      .price .price-menu ul .active .second-price {
+        display: block !important; }
+    .price .price-menu ul li {
+      -webkit-transition: 1s all;
+      transition: 1s all; }
+      .price .price-menu ul li .second-price {
+        display: none; }
+        .price .price-menu ul li .second-price li {
+          position: relative;
+          display: block;
+          padding: 15px 0 15px 31px; }
+        .price .price-menu ul li .second-price * {
+          font-size: 32px;
+          vertical-align: top;
+          display: inline-block; }
+        .price .price-menu ul li .second-price p {
+          color: #fff; }
+        .price .price-menu ul li .second-price span {
+          color: #f2a002;
+          float: right;
+          padding-right: 27px; }
+      .price .price-menu ul li a {
+        display: block;
+        padding: 10.5px 31px;
+        color: #fff;
+        font-size: 32px;
+        font-family: RobotoCondensed-Bold;
+        background-color: #3a3a3a;
+        margin: 5px 0;
+        position: relative;
+        -webkit-transition: 1s all;
+        transition: 1s all; }
+        .price .price-menu ul li a:after {
+          position: absolute;
+          content: '';
+          right: 40px;
+          top: 24px;
+          background-image: url("../img/p-arrow.png");
+          background-repeat: no-repeat;
+          width: 13px;
+          height: 24px; }
+        .price .price-menu ul li a:hover {
+          text-decoration: none; }
 
 .portfolio-in {
   background-color: #171717;
@@ -882,7 +899,8 @@ body .popup {
   color: #000; }
 
 .last-blocks-b {
-  min-height: 472px; }
+  min-height: 472px;
+  color: #fff; }
 
 .last-blocks-c {
   padding: 90px 0 0 50px; }
@@ -1104,6 +1122,45 @@ body .popup {
 
 .blog {
   background-color: #fff; }
+
+.title-project {
+  background-image: url("../img/auto-in.jpg");
+  background-position: center;
+  min-height: 600px;
+  text-align: center;
+  padding-top: 170px;
+  color: #fff; }
+  .title-project p {
+    opacity: 0.2; }
+  .title-project h2 {
+    font-size: 72px;
+    opacity: 0.9;
+    line-height: 72px; }
+
+.project-in {
+  background-color: #f3f3f3; }
+  .project-in .projects-info {
+    max-width: 970px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: -50px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 70px; }
+    .project-in .projects-info h2 {
+      font-size: 32px;
+      font-family: RobotoCondensed-Bold;
+      line-height: 32px;
+      color: #000; }
+    .project-in .projects-info p {
+      padding-top: 30px;
+      font-size: 18px; }
+  .project-in .img-project {
+    margin: 30px 0; }
+    .project-in .img-project ul li {
+      float: left; }
+      .project-in .img-project ul li a {
+        margin: 15px 15px; }
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1300px) {

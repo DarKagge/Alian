@@ -163,3 +163,26 @@ $(".toggle_mnu").click(function() {
 		e.preventDefault();
 		adaptive.goToNextSlide();
 	});
+
+
+
+
+
+
+	$(".price-menu > ul > li > a").on("click",function(e){
+		e.preventDefault();
+
+		if($(this).parent().hasClass("active")){
+			$(this).parent().removeClass("active");
+			$(".second-price").removeClass("active");
+		}else{
+			$(this).parent().addClass("active").siblings("li").removeClass("active");
+			$(".second-price").addClass("active");
+		}
+
+	});
+
+
+
+
+
