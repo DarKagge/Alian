@@ -37,7 +37,17 @@
         margin: 30px 10px;
       }
     }
-
+  }
+  .project-in .img-project{
+    width: 125%;
+    margin-left: -104px;
+    ul{
+      text-align: center;
+      li{
+        float: none;
+        display: inline-block;
+      }
+    }
   }
 }
 @media only screen and (max-width : 1190px){
@@ -201,6 +211,12 @@
   }
 }
 
+@media only screen and (max-width : 1137px){
+  .project-in .left-item-projects{
+    margin-left: -100px;
+  }
+}
+
 
 @media only screen and (max-width : 1132px){
   .company{
@@ -221,6 +237,30 @@
   .social ul li a{
     margin: 0 4px;
   }
+}
+
+
+@media only screen and (max-width : 1100px){
+  .about-us .img-us{
+    height: 420px;
+  }
+}
+
+
+@media only screen and (max-width : 1040px){
+  .project-in .left-item-projects{
+    margin-left: -60px;
+  }
+}
+
+
+
+@media only screen and (max-width : 1037px){
+  .project-in .img-project{
+    width: 100%;
+    margin-left: 0;
+  }
+
 }
 
 
@@ -359,6 +399,11 @@
       display: none;
     }
   }
+
+  .project-in .left-item-projects{
+    float: none;
+    margin: 30px auto;
+  }
 }
 
 
@@ -415,6 +460,14 @@
 }
 
 
+@media only screen and (max-width : 900px){
+  .about-us .img-us{
+    height: 360px;
+    margin-top: -50px;
+  }
+}
+
+
 @media only screen and (max-width : 864px){
   .causes{
     background-size: cover;
@@ -457,6 +510,10 @@
 @media only screen and (max-width : 786px){
   .company{
     padding-bottom: 170px;
+    padding-top: 120px;
+  }
+  .about-us .img-us{
+    height: 280px;
   }
 }
 
@@ -496,6 +553,10 @@
   }
 }
 
+
+
+
+
 @media only screen and (max-width : 670px){
   .arrows-slider{
 
@@ -512,6 +573,12 @@
   }
 }
 
+
+@media only screen and (max-width : 665px){
+  .about-us .img-us{
+    height: 250px;
+  }
+}
 
 @media only screen and (max-width : 653px){
   .all-form-two h2{
@@ -538,6 +605,14 @@
   }
 }
 
+
+@media only screen and (max-width : 650px){
+  .project-in .projects-info{
+    padding: 25px;
+  }
+}
+
+
 @media only screen and (max-width : 615px){
   .arrows-slider{
     display: none;
@@ -560,6 +635,17 @@
     }
   }
 }
+
+
+@media only screen and (max-width : 590px){
+  .about-us .img-us{
+    height: 200px;
+  }
+  .company{
+    padding-top: 150px;
+  }
+}
+
 
 @media only screen and (max-width : 510px){
   .service-items {
@@ -601,6 +687,9 @@
 }
 
 
+
+
+
 @media only screen and (max-width : 485px){
   .forma-cars form button{
     font-size: 19px;
@@ -638,6 +727,20 @@
   .title-in h2{
     font-size: 14vw;
   }
+  .about-us .title-us h2{
+    font-size: 15vw;
+  }
+}
+
+
+@media only screen and (max-width : 473px){
+  .about-us .img-us{
+    margin-top: 0;
+    height: 145px;
+  }
+  .company{
+    padding-top: 170px;
+  }
 }
 
 @media only screen and (max-width : 450px){
@@ -666,6 +769,30 @@
   }
 }
 
+
+
+@media only screen and (max-width : 435px){
+  .about-us .img-us{
+    margin-top: 0;
+    height: 130px;
+  }
+  .company{
+    padding-top: 185px;
+  }
+}
+
+
+@media only screen and (max-width : 380px){
+  .about-us .img-us{
+    margin-top: 0;
+    height: 95px;
+  }
+  .company{
+    padding-top: 200px;
+  }
+}
+
+
 @media only screen and (max-width : 368px){
   .all-form input{
     width: 100%;
@@ -677,6 +804,21 @@
     &:after{
       display: none;
     }
+  }
+  .about-us .img-us{
+    height: 70px;
+  }
+  .company{
+    padding-top: 230px;
+  }
+}
+
+
+
+@media only screen and (max-width : 360px){
+  .project-in .projects-info{
+    padding: 10px;
+    text-align: center;
   }
 }
 
@@ -699,6 +841,5 @@
   .title-in h2{
     font-size: 19vw;;
   }
-
 
 }
