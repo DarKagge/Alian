@@ -211,6 +211,13 @@
   }
 }
 
+
+@media only screen and (max-width : 1140px){
+  .project-in .right-item-projects{
+    margin-right: -90px;
+  }
+}
+
 @media only screen and (max-width : 1137px){
   .project-in .left-item-projects{
     margin-left: -100px;
@@ -230,7 +237,25 @@
     font-size:19vw;
   }
 }
+@media only screen and (max-width : 1119px){
+  .text-contact{
+    text-align: center;
+  }
+  .information {
+    text-align: center;
+    .item-info{
+      margin: 5px 10px;
+      &:first-child{
+        margin: 5px 10px;
+      }
+      &:last-child{
+        margin: 5px 10px;
+      }
+    }
 
+
+  }
+}
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1109px) {
@@ -270,25 +295,15 @@
   }
 }
 
-@media only screen and (max-width : 1119px){
-  .text-contact{
-    text-align: center;
-  }
-  .information {
-    text-align: center;
-    .item-info{
-      margin: 5px 10px;
-      &:first-child{
-        margin: 5px 10px;
-      }
-      &:last-child{
-        margin: 5px 10px;
-      }
-    }
 
-
+@media only screen and (max-width : 1028px){
+  .project-in .right-item-projects{
+    margin-right: -60px;
   }
 }
+
+
+
 
 
 @media only screen and (max-width : 1003px) {
@@ -403,6 +418,11 @@
   .project-in .left-item-projects{
     float: none;
     margin: 30px auto;
+  }
+  .project-in .right-item-projects{
+    float: none;
+    margin: 30px auto;
+
   }
 }
 
