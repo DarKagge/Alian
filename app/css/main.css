@@ -1445,10 +1445,12 @@ body .popup {
       display: none; }
   .project-in .left-item-projects {
     float: none;
-    margin: 30px auto; }
+    margin: 30px auto;
+    height: auto; }
   .project-in .right-item-projects {
     float: none;
-    margin: 30px auto; } }
+    margin: 30px auto;
+    height: auto; } }
 
 @media only screen and (max-width: 933px) {
   .forma-cars form ul {
